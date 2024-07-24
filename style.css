@@ -56,3 +56,35 @@ button:hover {
     margin-top: 2rem;
     border-radius: 25px;
 }
+
+/* Styles pour les écrans de moins de 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: calc(100% - 2rem);
+        max-width: none;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+}
+
+/* Styles pour les écrans de moins de 480px (mobiles très petits) */
+@media (max-width: 480px) {
+    input[type="text"] {
+        width: calc(100% - 2rem);
+        font-size: 1em;
+        margin-left: 1.5rem; 
+        margin-right: 1.5rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+    }
+
+}
