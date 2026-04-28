@@ -1,0 +1,15 @@
+age = int(input("Quel est votre âge ?"))
+
+if age < 18:
+    prixPlace = 7
+else:
+    prixPlace = 12
+
+print("Le prix de la place de cinéma est {}€".format(prixPlace))
+
+popCorn = input("Voulez-vous du pop-corn ?").lower()
+
+if popCorn == 'oui':
+    prixPlace += 5
+
+print("Le prix total est : {}€".format(prixPlace))
